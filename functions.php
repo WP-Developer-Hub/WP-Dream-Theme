@@ -7,13 +7,15 @@
  */
 $dir = get_template_directory();
 
-require_once $dir .'/inc/helper.php';
-require_once $dir .'/inc/class-scripts.php';
-require_once $dir .'/inc/class-manu-walker.php';
-require_once $dir .'/inc/inc/class-metabox.php';
-require_once $dir .'/inc/inc/class-customizer.php';
-require_once $dir .'/inc/class-comments-walker.php';
-require_once $dir .'/inc/inc/class-widget-area.php';
+// This is the correct usage of require_once with parentheses
+require_once($dir . '/inc/class-script.php');
+require_once($dir . '/inc/class-menu-walker.php');
+require_once($dir . '/inc/class-metabox.php');
+require_once($dir . '/inc/class-customizer.php');
+require_once($dir . '/inc/class-comment-walker.php');
+require_once($dir . '/inc/class-widget-area.php');
+require_once($dir . '/inc/helpers.php');
+
 
 /**
  * Theme setup
